@@ -32,7 +32,6 @@ TOPLEVEL_LANG ?= verilog
 
 WPWD=$(shell sh -c 'pwd -W')
 PWD=$(shell pwd)
-COCOTB=$(PWD)/../../..
 
 ifeq ($(OS),Msys)
 WPWD=$(shell sh -c 'pwd -W')
