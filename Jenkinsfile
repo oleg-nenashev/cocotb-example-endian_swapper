@@ -1,5 +1,7 @@
 pipeline {
-    agent { docker 'librecores/librecores-ci-modules' }
+    agent {
+        label 'librecores/librecores-ci-modules'
+    }
     
     stages {
       // Run the existing Test suite
