@@ -5,7 +5,7 @@ pipeline {
       // Run the existing Test suite
       stage("Test") {
         steps {
-          sh "ls"
+          sh "ls /tools"
         }
       }
     }
