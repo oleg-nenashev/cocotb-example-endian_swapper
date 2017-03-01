@@ -7,7 +7,7 @@ pipeline {
       // Run the existing Test suite
       stage("Test") {
         steps {
-          sh "ls /tools"
+          sh "module load cocotb/current"
         }
       }
     }
