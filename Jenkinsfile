@@ -7,8 +7,9 @@ pipeline {
       // Run the existing Test suite
       stage("Test") {
         steps {
-          sh "source /usr/share/modules/init/bash"
-          sh "module load cocotb/current"
+          sh_with_modules(
+              modules: ["eda/cocotb/current", "eda/icarus-verilog/current"],
+              command: "make all")
         }
       }
     }
