@@ -8,7 +8,7 @@ pipeline {
       stage("Test") {
         steps {
           sh_with_modules(
-              modules: ["eda/cocotb/current", "eda/icarus-verilog/current"],
+              modules: ["eda/cocotb/current", "eda/iverilog/current"],
               command: "make all")
         }
       }
