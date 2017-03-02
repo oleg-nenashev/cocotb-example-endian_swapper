@@ -9,7 +9,7 @@ pipeline {
         steps {
           sh_with_modules(
               modules: ["eda/cocotb/current", "eda/iverilog/current"],
-              command: "module avail")
+              command: "make all")
         }
       }
     }
