@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'ci-modules'
+        label 'librecores-ci-modules'
     }
     
     stages {
