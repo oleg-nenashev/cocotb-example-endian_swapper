@@ -1,14 +1,6 @@
-pipeline {
-    agent {
-        label 'librecores-ci-modules'
-    }
-    
-    stages {
+node('librecores-ci-modules') {
       // Run the existing Test suite
       stage("Test") {
-        steps {
           lcci.sh "ls"
-        }
       }
-    }
 }
