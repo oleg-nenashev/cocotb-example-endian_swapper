@@ -3,6 +3,6 @@ node('librecores-ci-modules') {
       stage("Test") {
           lcci.name = 'Alice'
 echo lcci.name /* prints: 'Alice' */
-lcci.sh 'The queen is angry!' /* prints: 'Hello, Alice. CAUTION: The queen is angry!' */
+lcci.caution 'The queen is angry!' /* prints: 'Hello, Alice. CAUTION: The queen is angry!' */
       }
 }
