@@ -1,3 +1,4 @@
+@Library('utils') import org.librecores.ci.Modules
 def modules = new Modules(steps)
 
 node('librecores-ci-modules') {
