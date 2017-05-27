@@ -9,6 +9,6 @@ node('librecores-ci-modules') {
       stage("Test") {
             lcci.sh "verilator --version"
             lcci.sh "or1k-elf-gcc --version"
-            lcci.sh "fusesoc --version"
+            lcci.sh "fusesoc list-paths"
       }
 }
