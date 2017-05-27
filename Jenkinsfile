@@ -1,7 +1,9 @@
 @Library('librecoresci') import org.librecores.ci.Modules
-def modules = new Modules(steps)
+def lcci = new Modules(steps)
 
 node('librecores-ci-modules') {
+      lcci.load("test")
+      
       // Run the existing Test suite
       stage("Test") {
 
